@@ -1,8 +1,9 @@
-import { ChevronDown, MessageCircle } from 'lucide-react';
+import { ChevronDown, MessageCircle } from "lucide-react";
+import lupisOri from "../assets/lupis_background.webp";
 
 export default function Hero() {
   const scrollToMenu = () => {
-    document.querySelector('#menu')?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector("#menu")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -10,8 +11,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage:
-            'url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: `url(${lupisOri})`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-leaf-900/90 via-leaf-800/80 to-palm-900/75" />
@@ -25,7 +25,7 @@ export default function Hero() {
               top: `${20 + i * 13}%`,
               left: `${10 + i * 14}%`,
               animationDelay: `${i * 0.4}s`,
-              animation: 'float 4s ease-in-out infinite',
+              animation: "float 4s ease-in-out infinite",
             }}
           />
         ))}
@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div
           className="inline-flex items-center gap-2 bg-palm-500/20 border border-palm-400/40 text-palm-200 text-sm font-sans font-500 px-4 py-2 rounded-full mb-6 backdrop-blur-sm"
-          style={{ animation: 'fadeIn 0.6s ease-out 0.2s both' }}
+          style={{ animation: "fadeIn 0.6s ease-out 0.2s both" }}
         >
           <span className="w-2 h-2 bg-palm-400 rounded-full inline-block" />
           Makanan Tradisional Khas Jawa
@@ -43,12 +43,12 @@ export default function Hero() {
         <h1
           className="font-serif font-800 text-white leading-tight mb-6"
           style={{
-            fontSize: 'clamp(2.4rem, 6vw, 4.5rem)',
-            lineHeight: '1.15',
-            animation: 'fadeUp 0.7s ease-out 0.4s both',
+            fontSize: "clamp(2.4rem, 6vw, 4.5rem)",
+            lineHeight: "1.15",
+            animation: "fadeUp 0.7s ease-out 0.4s both",
           }}
         >
-          Lupis Tiktik –{' '}
+          Lupis Tiktik –{" "}
           <span className="text-palm-300 italic">Manisnya Tradisi,</span>
           <br />
           Nikmatnya Setiap Gigitan
@@ -56,7 +56,7 @@ export default function Hero() {
 
         <p
           className="font-sans text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10"
-          style={{ animation: 'fadeUp 0.7s ease-out 0.6s both' }}
+          style={{ animation: "fadeUp 0.7s ease-out 0.6s both" }}
         >
           Dibuat fresh setiap hari dari beras ketan pilihan, balutan gula merah
           legit dan kelapa parut segar. Cita rasa autentik yang membawa hangat
@@ -65,7 +65,7 @@ export default function Hero() {
 
         <div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          style={{ animation: 'fadeUp 0.7s ease-out 0.8s both' }}
+          style={{ animation: "fadeUp 0.7s ease-out 0.8s both" }}
         >
           <a
             href="https://wa.me/6287756846953?text=Halo%20Lupis%20Tiktik!%20Saya%20ingin%20pesan%20lupis."
