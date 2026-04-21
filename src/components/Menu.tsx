@@ -1,7 +1,7 @@
 import { MessageCircle, Star } from "lucide-react";
 import { useIntersection } from "../hooks/useIntersection";
-import lupisOri from "../assets/lupis_ori.png";
-import lupisKeluarga from "../assets/lupis_keluarga.png";
+import lupisOri from "../assets/lupis_ori.webp";
+import lupisKeluarga from "../assets/lupis_keluarga.webp";
 
 const products = [
   {
