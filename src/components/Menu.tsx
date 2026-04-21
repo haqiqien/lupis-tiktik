@@ -1,33 +1,24 @@
-import { MessageCircle, Star } from 'lucide-react';
-import { useIntersection } from '../hooks/useIntersection';
+import { MessageCircle, Star } from "lucide-react";
+import { useIntersection } from "../hooks/useIntersection";
+import lupisOri from "../assets/lupis_ori.png";
+import lupisKeluarga from "../assets/lupis_keluarga.png";
 
 const products = [
   {
     id: 1,
-    name: 'Lupis Original',
-    desc: 'Beras ketan pilihan dengan gula merah cair yang legit dan kelapa parut segar. Tekstur lembut, rasa autentik dan memuaskan.',
-    badge: 'Best Seller',
-    tags: ['Lembut', 'Legit', 'Autentik'],
-    image:
-      'https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: "Lupis Original",
+    desc: "Beras ketan pilihan dengan gula merah cair yang legit dan kelapa parut segar. Tekstur lembut, rasa autentik dan memuaskan.",
+    badge: "Best Seller",
+    tags: ["Lembut", "Legit", "Autentik"],
+    image: lupisOri,
   },
   {
     id: 2,
-    name: 'Lupis Porsi Keluarga',
-    desc: 'Paket hemat untuk keluarga atau acara spesial. Lupis original dalam porsi besar — cocok untuk arisan, syukuran, atau oleh-oleh.',
-    badge: 'Favorit',
-    tags: ['Porsi Besar', 'Hemat', 'Spesial'],
-    image:
-      'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 3,
-    name: 'Lupis Mini (Camilan)',
-    desc: 'Ukuran kecil yang cocok untuk camilan sore hari bersama teh hangat. Manis, lembut, dan bikin nagih.',
-    badge: 'Populer',
-    tags: ['Mini', 'Camilan', 'Manis'],
-    image:
-      'https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: "Lupis Porsi Keluarga",
+    desc: "Paket hemat untuk keluarga atau acara spesial. Lupis original dalam porsi besar — cocok untuk arisan, syukuran, atau oleh-oleh.",
+    badge: "Favorit",
+    tags: ["Porsi Besar", "Hemat", "Spesial"],
+    image: lupisKeluarga,
   },
 ];
 
@@ -42,7 +33,8 @@ export default function Menu() {
             Menu Kami
           </div>
           <h2 className="font-serif font-800 text-leaf-900 text-4xl leading-tight mb-4">
-            Pilihan <span className="text-palm-600 italic">Lupis Segar</span> Kami
+            Pilihan <span className="text-palm-600 italic">Lupis Segar</span>{" "}
+            Kami
           </h2>
           <p className="font-sans text-gray-500 text-base max-w-lg mx-auto leading-relaxed">
             Dibuat dari resep turun-temurun dengan sentuhan kebersihan dan
@@ -52,8 +44,8 @@ export default function Menu() {
 
         <div
           ref={ref}
-          className={`grid md:grid-cols-3 gap-8 transition-all duration-700 ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          className={`grid md:grid-cols-2 gap-8 max-w-3xl mx-auto transition-all duration-700 ${
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
           {products.map((p, i) => (
@@ -76,7 +68,9 @@ export default function Menu() {
                 </div>
                 <div className="absolute top-4 right-4 flex items-center gap-1 bg-white/90 rounded-full px-2 py-1">
                   <Star className="w-3 h-3 fill-palm-400 text-palm-400" />
-                  <span className="font-sans font-600 text-xs text-gray-700">5.0</span>
+                  <span className="font-sans font-600 text-xs text-gray-700">
+                    5.0
+                  </span>
                 </div>
               </div>
 
@@ -113,7 +107,7 @@ export default function Menu() {
 
         <div className="text-center mt-10">
           <p className="font-sans text-gray-500 text-sm">
-            Ingin porsi khusus atau pertanyaan lain?{' '}
+            Ingin porsi khusus atau pertanyaan lain?{" "}
             <a
               href="https://wa.me/6287756846953"
               target="_blank"
